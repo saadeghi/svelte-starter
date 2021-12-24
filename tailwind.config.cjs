@@ -1,6 +1,6 @@
 module.exports = {
   content: [
-    './src/**/*.{html,js,svelte,ts}',
+    './src/**/*.{html,js,svelte,ts,svx,md}',
   ],
   theme: {
     extend: {
@@ -10,6 +10,7 @@ module.exports = {
     }
   },
   plugins: [
-    require('daisyui')
+    require('@tailwindcss/typography'),
+    require('daisyui'),
   ],
 }
