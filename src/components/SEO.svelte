@@ -7,11 +7,9 @@
 
 	const formattedTitle = title ? `${title} | ${siteData.title}` : siteData.title
 </script>
-
 <svelte:head>
 	<title>{formattedTitle}</title>
 	<meta name="description" content={desc}>
-
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:title" content={formattedTitle} />
 	<meta name="twitter:description" content={desc} />

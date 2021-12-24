@@ -5,5 +5,5 @@
   title="Title"
   desc="Description"
 />
-
+<a class="btn" href="/blog">blog</a>
 Homepage

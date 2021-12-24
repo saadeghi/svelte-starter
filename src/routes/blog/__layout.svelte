@@ -18,14 +18,17 @@
 </script>
 
 <script>
+	import { page } from '$app/stores';
   import SEO from '@components/SEO.svelte'
 	export let post
 	export let path
 </script>
-<SEO
-	title={post.title}
-  desc={post.desc}
-/>
+{#key $page.path}
+	<SEO
+		title={post.title}
+		desc={post.desc}
+	/>
+{/key}
 {#if path == '/blog'}
 	<slot />
 {:else}
